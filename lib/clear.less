@@ -1,0 +1,12 @@
+@clears: {
+  n: none;
+  b: both;
+  l: left;
+  r: right;
+};
+
+each(@clears, {
+  .m-c-@{key} {
+    clear: @value !important;
+  }
+});

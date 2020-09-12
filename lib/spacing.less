@@ -1,0 +1,67 @@
+@spacing: {
+  1: 1px;
+  2: 2px;
+  3: 3px;
+  4: 4px;
+  5: 5px;
+  8: 8px;
+  10: 10px;
+  12: 12px;
+  15: 15px;
+  16: 16px;
+  20: 20px;
+  25: 25px;
+  30: 30px;
+  32: 32px;
+  40: 40px;
+  50: 50px;
+  64: 64px;
+  100: 100px;
+  128: 128px;
+  150: 150px;
+  200: 200px;
+  250: 250px;
+  256: 256px;
+};
+
+each(@spacing, {
+  .m-m-@{key} {
+    margin: @value !important;
+  }
+
+  .m-mb-@{key} {
+    margin-bottom: @value !important;
+  }
+
+  .m-ml-@{key} {
+    margin-left: @value !important;
+  }
+
+  .m-mr-@{key} {
+    margin-right: @value !important;
+  }
+
+  .m-mt-@{key} {
+    margin-top: @value !important;
+  }
+
+  .m-p-@{key} {
+    padding: @value !important;
+  }
+
+  .m-pb-@{key} {
+    padding-bottom: @value !important;
+  }
+
+  .m-pl-@{key} {
+    padding-left: @value !important;
+  }
+
+  .m-pr-@{key} {
+    padding-right: @value !important;
+  }
+
+  .m-pt-@{key} {
+    padding-top: @value !important;
+  }
+});

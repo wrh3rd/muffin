@@ -1,0 +1,12 @@
+@positions: {
+  a: absolute;
+  f: fixed;
+  r: relative;
+  s: static;
+}
+
+each(@positions, {
+  .m-pos-@{key} {
+    position: @value !important;
+  }
+});

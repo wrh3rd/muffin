@@ -1,0 +1,17 @@
+@text-decorations: {
+  no: none;
+  bl: blink;
+  da: dashed;
+  dt: dotted;
+  do: double;
+  lt: line-through;
+  ov: overline;
+  un: underline;
+  wa: wavy;
+};
+
+each(@text-decorations, {
+  .m-td-@{key} {
+    text-decoration: @value !important;
+  }
+});

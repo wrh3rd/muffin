@@ -1,0 +1,29 @@
+@text-aligns: {
+  c: center;
+  j: justify;
+  l: left;
+  r: right;
+};
+
+each(@text-aligns, {
+  .m-ta-@{key} {
+    text-align: @value !important;
+  }
+});
+
+@vertical-aligns: {
+  ba: baseline;
+  bo: bottom;
+  mi: middle;
+  sb: sub;
+  sp: sup;
+  tb: text-bottom;
+  to: top;
+  tt: text-top;
+};
+
+each(@vertical-aligns, {
+  .m-va-@{key} {
+    vertical-align: @value !important;
+  }
+});

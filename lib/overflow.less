@@ -1,0 +1,20 @@
+@overflows: {
+  a: auto;
+  h: hidden;
+  s: scroll;
+  v: visible;
+};
+
+each(@overflows, {
+  .m-ov-@{key} {
+    overflow: @value !important;
+  }
+
+  .m-ox-@{key} {
+    overflow-x: @value !important;
+  }
+
+  .m-oy-@{key} {
+    overflow-y: @value !important;
+  }
+});

@@ -1,0 +1,20 @@
+@displays: {
+  bl: block;
+  fl: flex;
+  ib: inline-block;
+  if: inline-flex;
+  ig: inline-grid;
+  in: inline;
+  gr: grid;
+  li: list-item;
+  no: none;
+  tb: table;
+  tc: table-cell;
+  tr: table-row;
+};
+
+each(@displays, {
+  .m-d-@{key} {
+    display: @value !important;
+  }
+});

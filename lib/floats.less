@@ -1,0 +1,11 @@
+@floats: {
+  n: none;
+  l: left;
+  r: right;
+};
+
+each(@clears, {
+  .m-f-@{key} {
+    float: @value !important;
+  }
+});

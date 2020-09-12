@@ -1,0 +1,24 @@
+@list-style-positions: {
+  i: inside;
+  o: outside;
+}
+
+each(@list-style-positions, {
+  .m-lsp-@{key} {
+    list-style-position: @value !important;
+  }
+});
+
+@list-style-types: {
+  ci: circle;
+  de: decimal;
+  di: disc;
+  no: none;
+  sq: square;
+}
+
+each(@list-style-types, {
+  .m-lst-@{key} {
+    list-style-type: @value !important;
+  }
+});

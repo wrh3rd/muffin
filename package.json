@@ -1,0 +1,11 @@
+{
+  "name": "muffin",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/wrh3rd/muffin.git",
+  "author": "William R. Hansen <wrh3rd@posteo.net>",
+  "license": "MIT",
+  "scripts": {
+    "build": "lessc lib/main.less dist/muffin.css --clean-css=\"--s1 --advanced --compatibility=ie8\""
+  }
+}
